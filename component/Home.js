@@ -1,14 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, Image, Pressable,StyleSheet, Button } from 'react-native';
-// import { FontAwesome } from '@expo/vector-icons';
-// import { NavigationContainer } from '@react-navigation/native';
-// import { createNativeStackNavigator } from '@react-navigation/native-stack';
-// import Profile from './Profile';
 const Home = (props) => {
     const navigation = props.navigation;
     const route = props.route;    
-    // const dataProfile = [...route.params.newData];
-    // console.log(route.params.newData)
+
     const dataHome = [{
       id:1,
       name:'Phạm Quang Thắng',
@@ -19,12 +14,7 @@ const Home = (props) => {
     }]
   
 const click = ()=>{
-    // if(dataProfile){
-    //    dataHome = [...dataProfile]
-    //    navigation.navigate('Profile',{dataHome:dataHome})
-    // }else{
-    //   navigation.navigate('Profile',{dataHome:dataHome})
-    // }
+
     
      navigation.navigate('Profile',{dataHome:dataHome});
      
@@ -33,7 +23,7 @@ const click = ()=>{
     <View style={styles.container} >
       
        <Button
-            title='Thông tin cá nhân '
+            title='Profile'
             onPress={()=>{click()}}
 
        />

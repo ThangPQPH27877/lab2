@@ -38,7 +38,7 @@ const EditProfile =(props)=>{
             }
            
          }
-        //  console.log(newData);
+
          navigation.navigate('Home',{newData:newData})
     }
     return (

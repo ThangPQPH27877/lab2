@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, Image, Pressable,StyleSheet,FlatList } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
-// import EditProfile from './EditProfile';
 const Profile = (props) => {
   const navigation = props.navigation;
   const route = props.route;
@@ -30,7 +29,7 @@ const Profile = (props) => {
        
         data={dataProfile}
         renderItem={({item}) => 
-        <View style={styles.info}>
+        <View style={styles.info1}>
           
           <Text style={styles.text}>Họ và tên: {item.name}</Text>
           <Text style={styles.text}>Địa chỉ: {item.diaChi} </Text>
@@ -46,7 +45,12 @@ const Profile = (props) => {
   );
 };
 const styles = StyleSheet.create({
-  
+  textInput:{
+    borderWidth: 1,
+    padding:7,
+    borderRadius:5,
+    marginTop: 10
+  },
   image:{
       width: '100%',
      
@@ -68,6 +72,12 @@ const styles = StyleSheet.create({
   info:{
     marginTop:10,
 
+  },
+  info1:{
+    marginTop:10,
+    borderWidth: 1,
+    padding:7,
+    borderRadius:5
   },
   text_edit:{
     textAlign: 'right',
