@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, Image, Pressable,StyleSheet, Button,TextInput } from 'react-native';
-// import { NavigationContainer } from '@react-navigation/native';
-// import { createNativeStackNavigator } from '@react-navigation/native-stack';
-// import Home from './Home';
+
 const EditProfile =(props)=>{
     const navigation = props.navigation;
     const route = props.route;
